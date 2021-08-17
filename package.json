@@ -1,0 +1,19 @@
+{
+  "name": "proof-of-concept-v1",
+  "version": "1.0.0",
+  "description": "hovedopgave",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saphyron/Proof-of-Concept.git"
+  },
+  "author": "John Hoeg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saphyron/Proof-of-Concept/issues"
+  },
+  "homepage": "https://github.com/saphyron/Proof-of-Concept#readme"
+}
