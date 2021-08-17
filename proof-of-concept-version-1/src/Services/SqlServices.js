@@ -46,5 +46,22 @@ const connectToServer = () => {
                 rowCollectionOnDone: true
             }
         }
+
+        let connection = new Connection(config)
+
+        connection.connect()
+
+        connection.on('connect', function (err) {
+            if (err) {
+                console.log('Error: ', err)
+                reject(err)
+            } else {
+                // If no error, then good to go...
+                console.log('Connection Successful!')
+                resolve(connection)
+            }
+        })
+
+        connection.on('end', () => { console.log("Connection Closed!") })
     })
 }
