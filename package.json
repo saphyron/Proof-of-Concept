@@ -4,7 +4,8 @@
   "description": "hovedopgave",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon ./Server/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/saphyron/Proof-of-Concept/issues"
   },
-  "homepage": "https://github.com/saphyron/Proof-of-Concept#readme"
+  "homepage": "https://github.com/saphyron/Proof-of-Concept#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2"
+  }
 }
