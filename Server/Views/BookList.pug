@@ -1,0 +1,8 @@
+include header
+    include ../css/Books.css
+body 
+    include Menu 
+    select(name='Genre' placeholder="Genre" id="Genre")
+        each element in genre 
+            option(value='#{element}') #{element}
+            

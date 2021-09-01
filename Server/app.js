@@ -30,7 +30,8 @@ function isAdmin(req,res,next) {
 
 
 app.get('/', async (req, res) => {
-    res.render('FrontPage', {});
+    const genre = await controller.getAllGenre();
+    res.render('BookList', {genre: genre});
 })
 
 app.get('/admin', isAdmin, async (req, res) => {
